@@ -22,7 +22,7 @@ if(quoteText){
 }
 
 // Backend API URL
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://notes-strick.onrender.com";
 
 // Tasks CRUD
 const tasksTableBody = document.querySelector("#tasks-table tbody");
