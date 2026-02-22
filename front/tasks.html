@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks - Task Manager</title>
+  <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Tasks</h1>
+    <div class="nav">
+      <a href="index.html">🏠 Home</a>
+      <a href="reports.html">📊 Reports</a>
+      <a href="settings.html">⚙️ Settings</a>
+    </div>
+
+    <div class="task-input">
+      <input type="text" id="task-title" placeholder="Task Title">
+      <textarea id="task-desc" placeholder="Task Description 😃"></textarea>
+
+      <div class="task-meta">
+        <label>Importance:
+          <select id="task-importance">
+            <option value="Normal">Normal</option>
+            <option value="Important">Important</option>
+          </select>
+        </label>
+        <label>Status:
+          <select id="task-status">
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </label>
+        <label>Due Date:
+          <input type="date" id="task-due">
+        </label>
+      </div>
+
+      <button id="add-task-btn">Add Task ✅</button>
+    </div>
+
+    <div class="tasks-container">
+      <table id="tasks-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Importance</th>
+            <th>Status</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="notes.js"></script>
+</body>
+</html>
