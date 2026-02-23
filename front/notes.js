@@ -22,7 +22,7 @@ if(quoteText){
 }
 
 // Backend API URL
-const API_URL = "http://localhost:3000/api/tasks";
+const API_URL = "https://notes-backend-3jz5.onrender.com/api/tasks";
 
 // Tasks CRUD
 const tasksTableBody = document.querySelector("#tasks-table tbody");
