@@ -294,6 +294,7 @@ function App() {
             </div>
           )}
 
+
           {/* QUOTES PAGE - FULL SIZE */}
           {currentPage === "settings" && (
             <div className="page-content full-width">
